@@ -23,7 +23,6 @@ configuration: Release
 
 build_script:
   - cmd: |-
-      echo %GLOBAL_VAR%
       echo %VAR_A%
       echo %VAR_B%
 
