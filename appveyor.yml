@@ -15,10 +15,10 @@ matrix:
 
 environment:
   GLOBAL_VAR: v1.1.0
-  VAR_B: value_a
+  VAR_B: value_1
   matrix:
-    - VAR_A: value_a
-    - VAR_A: value_b
+    - VAR_A: value_1
+    - VAR_A: value_2
 
 configuration: Release
 
@@ -33,16 +33,16 @@ for:
     matrix:
       only:
         - platform: Win32
-        - VAR_A: value_a
+        - VAR_A: value_1
       
     environment:
-      VAR_B: value_b
+      VAR_B: value_2
 
   -
     matrix:
       only:
         - platform: x64
-        - VAR_A: value_a
+        - VAR_A: value_1
 
     environment:
-      VAR_B: value_c
+      VAR_B: value_3
